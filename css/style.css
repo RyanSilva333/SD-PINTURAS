@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-whats {
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path d='M15 3C8.373 3 3 8.373 3 15c0 2.251 0.632 4.35 1.711 6.15L3.107 27 9.082 25.432C10.829 26.425 12.846 27 15 27c6.627 0 12-5.373 12-12S21.627 3 15 3zM10.893 9.402c0.195 0 0.396-0.001 0.569 0.009 0.214 0.005 0.447 0.021 0.671 0.514 0.265 0.586 0.843 2.056 0.917 2.205 0.074 0.149 0.126 0.325 0.023 0.52-0.098 0.2-0.149 0.321-0.293 0.498-0.149 0.172-0.312 0.385-0.447 0.515-0.149 0.149-0.303 0.313-0.131 0.61s0.77 1.271 1.653 2.057c1.135 1.014 2.092 1.325 2.39 1.474 0.298 0.149 0.47 0.126 0.642-0.074 0.177-0.195 0.743-0.864 0.943-1.162 0.195-0.298 0.394-0.246 0.664-0.148 0.274 0.098 1.735 0.818 2.033 0.967 0.298 0.149 0.493 0.223 0.568 0.344 0.077 0.125 0.077 0.72-0.17 1.414-0.247 0.693-1.46 1.363-2.004 1.41-0.549 0.051-1.061 0.247-3.568-0.74-3.024-1.191-4.931-4.288-5.08-4.488-0.149-0.195-1.211-1.61-1.211-3.07 0-1.465 0.768-2.182 1.037-2.48 0.274-0.298 0.595-0.371 0.795-0.371z'/></svg>");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-whats2 {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path d='M15 3C8.373 3 3 8.373 3 15c0 2.251 0.632 4.35 1.711 6.15L3.107 27 9.082 25.432C10.829 26.425 12.846 27 15 27c6.627 0 12-5.373 12-12S21.627 3 15 3zM10.893 9.402c0.195 0 0.396-0.001 0.569 0.009 0.214 0.005 0.447 0.021 0.671 0.514 0.265 0.586 0.843 2.056 0.917 2.205 0.074 0.149 0.126 0.325 0.023 0.52-0.098 0.2-0.149 0.321-0.293 0.498-0.149 0.172-0.312 0.385-0.447 0.515-0.149 0.149-0.303 0.313-0.131 0.61s0.77 1.271 1.653 2.057c1.135 1.014 2.092 1.325 2.39 1.474 0.298 0.149 0.47 0.126 0.642-0.074 0.177-0.195 0.743-0.864 0.943-1.162 0.195-0.298 0.394-0.246 0.664-0.148 0.274 0.098 1.735 0.818 2.033 0.967 0.298 0.149 0.493 0.223 0.568 0.344 0.077 0.125 0.077 0.72-0.17 1.414-0.247 0.693-1.46 1.363-2.004 1.41-0.549 0.051-1.061 0.247-3.568-0.74-3.024-1.191-4.931-4.288-5.08-4.488-0.149-0.195-1.211-1.61-1.211-3.07 0-1.465 0.768-2.182 1.037-2.48 0.274-0.298 0.595-0.371 0.795-0.371z'/></svg>");
+  background-repeat: no-repeat;
+}
+
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: #000 !important;
+}
+
+header {
+  height: 8rem;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.help {
+  display: none;
+}
+
+ul {
+  display: flex;
+  gap: 9rem;
+  list-style: none;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+ul a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+ul img {
+  width: 10rem;
+  height: 10rem;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.line {
+  border: 1px solid #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-whats {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 2rem !important;
+  background-color: white;
+  color: #000;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.btn-banner {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 3rem !important;
+  background-color: white;
+  color: #000;
+  width: 12rem;
+  height: 3rem !important;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 5rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.carousel-inner img {
+  height: 35rem !important; /* Altura fixa */
+  object-fit: cover; /* Corta e preenche proporcionalmente */
+  border-radius: 15px; /* Opcional, para manter o visual arredondado */
+}
+
+.conteudo {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.galeria img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.clientes {
+  background-color: #d4af37;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 2rem;
+    width: 95%;
+  }
+
+  nav {
+    height: 10rem;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 9rem;
+    height: 9rem;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .btn-whats {
+    width: 10rem !important;
+    height: 2rem !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .line {
+    border: 1px solid #fff;
+    width: 80%;
+  }
+
+  .menu-item {
+    display: none !important;
+  }
+
+  .carousel-inner {
+    height: 25rem !important; /* Altura fixa */
+    object-fit: cover; /* Corta e preenche proporcionalmente */
+    border-radius: 15px;
+  }
+
+  .carousel-inner img {
+    height: 15rem !important; /* Altura fixa */
+    object-fit: cover; /* Corta e preenche proporcionalmente */
+    border-radius: 15px; /* Opcional, para manter o visual arredondado */
+  }
+
+  .carousel {
+    display: none !important;
+  }
+
+  .help {
+    display: block;
+    height: 16rem !important;
+  }
+
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+  }
+
+  .galeria img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map-sd {
+    width: 380px !important;
+    height: 350px !important;
+    padding: 10px !important;
+  }
+}
