@@ -171,6 +171,7 @@ main {
     text-align: center !important;
     align-items: center !important;
     padding-left: 3rem !important;
+    display: none;
   }
 
   .btn-availa {
