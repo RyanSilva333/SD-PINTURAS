@@ -1,5 +1,5 @@
 const galeria = document.getElementById("galeria");
-const totalImagens = 27;
+const totalImagens = 30;
 
 for (let i = 1; i <= totalImagens; i++) {
   const img = document.createElement("img");
@@ -33,3 +33,4 @@ modal.onclick = function (e) {
     modal.style.display = "none";
   }
 };
+
