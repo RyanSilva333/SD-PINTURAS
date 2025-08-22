@@ -34,3 +34,9 @@ modal.onclick = function (e) {
   }
 };
 
+// Evento: fechar ao pressionar a tecla ESC
+window.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    modal.style.display = "none";
+  }
+});

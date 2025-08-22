@@ -7,7 +7,7 @@
 
 .icon-whats {
   background-image: url("../img/whatsapp.svg");
-  background-size: 20%;
+  background-size: 18%;
   background-position: left;
   background-repeat: no-repeat;
 }
@@ -64,17 +64,43 @@ ul img {
   -webkit-user-drag: none;
 }
 
+.menu-item a:hover {
+  color: #fbe087;
+}
+
 .line {
   border: 1px solid #fff;
   width: 80%;
   margin: 0 auto;
 }
 
-.btn-whats {
+.btn-vermais {
+  display: grid;
+  margin: 0 auto;
   text-align: center;
   text-decoration: none;
   padding: 10px;
-  padding-left: 2rem !important;
+  color: #ffffff;
+  width: 12rem;
+  height: 3rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: gold;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.btn-vermais:hover {
+  background-color: gold;
+  color: #000;
+  transition: 0.2s ease-in-out 0.3s;
+}
+
+.btn-whats {
+  text-align: center;
+  text-decoration: none;
+  padding: 11px;
+  padding-left: 33px !important;
   background-color: white;
   color: #25d366;
   width: 10rem;
@@ -86,7 +112,7 @@ ul img {
   text-align: center;
   text-decoration: none;
   padding: 10px;
-  padding-left: 2.5rem !important;
+  padding-left: 37px !important;
   background-color: white;
   color: #25d366;
   width: 12rem;
@@ -121,6 +147,7 @@ main {
   justify-content: center;
   gap: 1rem;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .galeria img {
@@ -171,6 +198,91 @@ main {
 
 .clientes {
   background-color: #d4af37;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  user-select: none;
+  gap: 5px;
+}
+
+.icon a {
+  padding: 12px;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(244, 143, 143, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: black;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
+
+.wrapper .google:hover,
+.wrapper .google:hover .tooltip,
+.wrapper .google:hover .tooltip::before {
+  background: #4285f4;
+  color: #ffffff;
+}
+
+.copy {
+  padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -288,14 +400,23 @@ main {
     border-radius: 10px;
   }
 
-  .contato {
+  .Contato-text {
     display: flex;
     flex-direction: column;
   }
 
   .map-sd {
-    width: 380px !important;
+    width: 390px !important;
     height: 350px !important;
     padding: 10px !important;
+  }
+
+  .copy {
+    padding: 10px;
+    font-size: 13px !important;
+  }
+
+  .wrapper {
+    width: 90%;
   }
 }
