@@ -118,7 +118,7 @@ ul img {
   background-color: white;
   color: #25d366;
   width: 12rem;
-  height: 3rem !important;
+
   border-radius: 7px;
   font-weight: bold;
 }
@@ -480,14 +480,31 @@ main {
   }
 
   .btn-availa {
-    background-color: white;
-    color: #000;
+    background-color: rgba(255, 217, 0, 0.75);
+    border: 2px solid gold;
+    color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px;
     border-radius: 5px;
-    text-align: center !important;
-    align-items: center !important;
+  }
+
+  .btn-availa .top-key {
+    height: 2px;
+    width: 2.5rem;
+    position: absolute;
+    top: 26.79rem;
+    background: black;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+
+  .btn-availa .bottom-key-1 {
+    height: 2px;
+    width: 2.5rem;
+    right: 7rem;
+    bottom: 11.95rem;
+    position: absolute;
+    background: black;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
   }
 
   .btn-banner {
@@ -501,10 +518,7 @@ main {
     max-width: 200px;
     padding: 10px;
     text-align: center;
-    background-color: white;
-    color: black;
     text-decoration: none;
-    border-radius: 8px;
     margin: auto;
   }
 
