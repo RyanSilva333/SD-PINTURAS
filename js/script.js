@@ -70,7 +70,7 @@ fetch("js/avaliacoes.json")
     container.innerHTML = "";
     container2.innerHTML = "";
 
-    for (let i = 0; i < avaliacoes.length; i++) {
+    for (let i = 0; i < avaliacoes.length && i < 4; i++) {
       const avaliacao = avaliacoes[i];
 
       const div = document.createElement("div");
@@ -95,8 +95,30 @@ fetch("js/avaliacoes.json")
         <span class="data">${tempoAtras(avaliacao.data)}</span>
       `;
 
-      //swiper slide
+      // Adiciona as informações da avaliação
+      divbody.innerHTML = `
+        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
+        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
+        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
+        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
+        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
+        <p>${avaliacao.descricao}</p>
+        <a href="${avaliacao.link}" class="links" target="_blank">Ler mais</a>
+      `;
 
+      divfooter.innerHTML = `
+        <span class="publicado">Publicado em Google</span>
+      `;
+
+      div.appendChild(divtitle);
+      div.appendChild(divbody);
+      div.appendChild(divfooter);
+      container.appendChild(div);
+    }
+
+    //segundo loop: avaliações no swiper
+    for (let i = 0; i < avaliacoes.length; i++) {
+      const avaliacao = avaliacoes[i];
       const divswiper2 = document.createElement("div");
       divswiper2.classList.add("swiper-slide");
 
@@ -119,25 +141,6 @@ fetch("js/avaliacoes.json")
           </div>
       `;
 
-      // Adiciona as informações da avaliação
-      divbody.innerHTML = `
-        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
-        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
-        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
-        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
-        <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
-        <p>${avaliacao.descricao}</p>
-        <a href="${avaliacao.link}" class="links" target="_blank">Ler mais</a>
-      `;
-
-      divfooter.innerHTML = `
-        <span class="publicado">Publicado em Google</span>
-      `;
-
-      div.appendChild(divtitle);
-      div.appendChild(divbody);
-      div.appendChild(divfooter);
-      container.appendChild(div);
       container2.appendChild(divswiper2);
     }
   })

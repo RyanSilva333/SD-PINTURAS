@@ -126,6 +126,21 @@ ul img {
   font-weight: bold;
 }
 
+.btn-banner-b {
+  margin-left: 2.8rem;
+  display: flex;
+  gap: 2px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px;
+  background-color: white;
+  color: #25d366;
+  width: 12rem;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
 .btn-banner-m {
   margin: 0 auto;
   display: flex;
@@ -529,6 +544,10 @@ main {
     color: #25d366 !important;
   }
 
+  .btn-banner-b {
+    margin: 0 auto;
+  }
+
   .btn-banner,
   .btn-availa {
     display: block;
@@ -657,6 +676,15 @@ main {
   .wripeer {
     display: flex !important;
   }
+
+  .swiper-pagination {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    gap: 4rem;
+  }
 }
 
 /* Swipper Teste */
@@ -693,4 +721,8 @@ main {
 
 .stars-swiper {
   font-size: 11px !important;
+}
+
+.swiper-pagination {
+  display: none;
 }
