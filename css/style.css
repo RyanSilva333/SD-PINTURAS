@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+.icon-whats-m {
+  font-size: 35px;
+}
+
 .icon-whats {
   background-image: url("../img/whatsapp.svg");
   background-size: 18%;
@@ -118,7 +122,21 @@ ul img {
   background-color: white;
   color: #25d366;
   width: 12rem;
+  border-radius: 7px;
+  font-weight: bold;
+}
 
+.btn-banner-m {
+  margin: 0 auto;
+  display: flex;
+  gap: 2px;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px;
+  background-color: white;
+  color: #25d366;
+  width: 12.5rem;
   border-radius: 7px;
   font-weight: bold;
 }
