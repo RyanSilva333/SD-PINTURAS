@@ -64,9 +64,11 @@ fetch("js/avaliacoes.json")
   .then((response) => response.json())
   .then((avaliacoes) => {
     const container = document.getElementById("avaliacao");
+    const container2 = document.getElementById("swiper-slide");
 
     // limpa o container antes de inserir
     container.innerHTML = "";
+    container2.innerHTML = "";
 
     for (let i = 0; i < avaliacoes.length; i++) {
       const avaliacao = avaliacoes[i];
@@ -93,6 +95,30 @@ fetch("js/avaliacoes.json")
         <span class="data">${tempoAtras(avaliacao.data)}</span>
       `;
 
+      //swiper slide
+
+      const divswiper2 = document.createElement("div");
+      divswiper2.classList.add("swiper-slide");
+
+      divswiper2.innerHTML = `
+        <h3 class="title-swiper">${
+          avaliacao.nome
+        }  <i class="fa-solid fa-circle-check fa-2xs" style="color: #0094dfff"></i></h3>
+          <span class="data-swiper">${tempoAtras(avaliacao.data)}</span>
+          <div class="stars-swiper">
+            <i class="fa-solid fa-star stars-swiper" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star stars-swiper" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star stars-swiper" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star stars-swiper" style="color: #ffd43b"></i>
+            <i class="fa-solid fa-star stars-swiper" style="color: #ffd43b"></i>
+            <p>${avaliacao.descricao}</p>
+            <a href="${
+              avaliacao.link
+            }" class="links" target="_blank">Ler mais</a>
+            <p class="publicado">Publicado em Google</p>
+          </div>
+      `;
+
       // Adiciona as informações da avaliação
       divbody.innerHTML = `
         <i class="fa-solid fa-star stars-avaliacao" style="color: #ffd43b"></i>
@@ -112,6 +138,7 @@ fetch("js/avaliacoes.json")
       div.appendChild(divbody);
       div.appendChild(divfooter);
       container.appendChild(div);
+      container2.appendChild(divswiper2);
     }
   })
   .catch((error) => console.error("Erro ao carregar JSON:", error));

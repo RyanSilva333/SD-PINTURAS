@@ -635,4 +635,44 @@ main {
   .card {
     display: none !important;
   }
+
+  .wripeer {
+    display: flex !important;
+  }
+}
+
+/* Swipper Teste */
+
+.swiper {
+  width: 100%;
+  height: auto;
+  gap: 5rem !important;
+}
+
+.swiper-wrapper {
+  gap: 5px !important;
+}
+
+.swiper-slide {
+  border-radius: 5px;
+  color: black;
+  width: 150px !important;
+  height: 220px;
+  background: whitesmoke;
+  text-align: start;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-swiper {
+  font-size: 16px !important;
+}
+
+.data-swiper {
+  font-size: 11px !important;
+}
+
+.stars-swiper {
+  font-size: 11px !important;
 }

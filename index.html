@@ -49,6 +49,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -190,7 +195,7 @@
           >Pedir Orçamento!</a
         >
         <br />
-        <a href="#galeria" class="btn-availa">Ver nossos Serviços!</a>
+        <a href="#galeria" class="btn-availa"> Ver nossos Serviços! ></a>
         <br />
         <a href="#avaliacoes" class="btn-availa">Ver Avaliações!</a>
       </section>
@@ -264,6 +269,25 @@
               >
             </div>
           </div>
+        </div>
+
+        <div class="wripeer" style="padding: 1rem; display: none">
+          <!-- Swiper -->
+          <br />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper" id="swiper-slide"></div>
+          </div>
+
+          <!-- Swiper JS -->
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <!-- Initialize Swiper -->
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+              watchSlidesProgress: true,
+              slidesPerView: 2,
+            });
+          </script>
         </div>
 
         <div class="avaliacao" id="avaliacao"></div>
@@ -376,7 +400,7 @@
           Copyrigh &copy; 2025 - <span class="fw-bold">SD Pinturas</span> |
           Todos os direitos reservados. <br />
         </p>
-        <!-- Desenvolvido por Ryan Silva https://github.com/RyanSilva333  — Uso não comercial permitido com créditos. - © 2025 -->
+        <!-- Desenvolvido por Ryan Vieira  — Uso não comercial permitido com créditos. - © 2025 -->
       </footer>
     </main>
     <script
@@ -387,4 +411,3 @@
     <script src="js/script.js"></script>
   </body>
 </html>
-
