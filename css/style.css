@@ -702,11 +702,11 @@ main {
 .swiper-slide {
   border-radius: 5px;
   color: black;
-  width: 150px !important;
+  width: 180px !important;
   height: 220px;
-  background: whitesmoke;
+  background: white;
   text-align: start;
-  padding: 5px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
 }
