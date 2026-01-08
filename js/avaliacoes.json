@@ -1,7 +1,13 @@
 [
   {
+    "nome": "Amador Prado",
+    "descricao": "Excelente profissional, trabalho muito bom e dentro do prazo!",
+    "link": "https://maps.app.goo.gl/p4zCp2FrbTK7ry4r8",
+    "data": "2026/01/01"
+  },
+  {
     "nome": "Kelly Cristina",
-    "descricao": "Procurei um serviço de pintura na Praia Grande e, por sorte, encontrei essa equipe. Foi a melhor coisa que podia ter acontecido! São profissionais sérios, rápidos e muito caprichosos.",
+    "descricao": "Procurei um serviço de pintura na Praia Grande e, por sorte, encontrei essa equipe. Foi a melhor coisa que podia ter acontecido! São profissionais sérios e muito caprichosos.",
     "link": "https://share.google/H3kzNFbsit9jOafaN",
     "data": "2025/11/07"
   },
@@ -145,3 +151,4 @@
     "data": "2025/05/28"
   }
 ]
+
