@@ -1,5 +1,23 @@
 [
   {
+    "nome": "João Santana",
+    "descricao": "Pintor muito atencioso aos detalhes, excelente profissional. Recomendo à todos que desejam um serviço bem feito, preciso nos detalhes, e de excelente qualidade! ",
+    "link": "https://share.google/uDlvU51P2nDSJOwGK",
+    "data": "2026/02/11"
+  },
+  {
+    "nome": "Gustavo S.",
+    "descricao": "Além do atendimento excelente, o trabalho que vocês fazem é bem organizado, limpo e rápido! indico para os próximos. ",
+    "link": "https://share.google/D0H2IR3dasRkjS9cU",
+    "data": "2026/02/11"
+  },
+  {
+    "nome": "Giovana Assis",
+    "descricao": "Excelente trabalho! Mesmo não podendo acompanhar pessoalmente, equipe mandou todas as atualizações. Recomendo muito, super rápidos e muito atenciosos! ",
+    "link": "https://share.google/CVA8ug0AMSVIbGdt4",
+    "data": "2026/02/11"
+  },
+  {
     "nome": "Daniele Cristine Rovai Farat",
     "descricao": "Já é a terceira vez que usamos o seu serviço e o resultado é sempre impecável. Atencioso e caprichoso. Recomendo.",
     "link": "https://share.google/CVA8ug0AMSVIbGdt4",
@@ -157,5 +175,6 @@
     "data": "2025/05/28"
   }
 ]
+
 
 
