@@ -127,9 +127,9 @@ ul img {
 }
 
 .btn-banner-b {
-  margin-left: 2.8rem;
+  margin-left: 6.3rem;
   display: flex;
-  gap: 2px;
+  gap: 4px;
   text-align: center;
   align-items: center;
   text-decoration: none;
@@ -162,6 +162,37 @@ main {
   text-align: center;
   justify-content: center;
   color: #fff;
+}
+
+.sobre-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-card{
+  background-color: rgba(255, 255, 255, 0.65);
+  text-align: left;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #ffc400;
+}
+
+.feature-card .icon {
+  width: 45px;
+  height: 45px;
+  background: gold;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: rgb(253, 243, 243);
+  margin-bottom: 0.75rem;
 }
 
 .carousel-inner img {
@@ -236,6 +267,7 @@ main {
 }
 
 .wrapper {
+  
   display: inline-flex;
   list-style: none;
   user-select: none;
@@ -316,8 +348,35 @@ main {
   color: #ffffff;
 }
 
+
+/* Conteudo Contato */
+.mid-content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 0.5rem;
+}
+
+strong {
+  font-size: 14px;
+  color: rgb(168, 168, 168);
+}
+
+.Contato-items {
+  padding: 5px;
+}
+
+
 .copy {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  color: lightgray;
   padding: 10px;
+}
+
+footer {
+  padding: 1rem;
 }
 
 /* card availação */
@@ -478,6 +537,36 @@ main {
     width: 100%;
   }
 
+  .conteudo {
+    width: 85%;
+  }
+
+  .sobre-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Uma coluna no mobile */
+    gap: 0.5rem; /* Gap menor para mobile */
+    margin-top: 1rem;
+    width: 90%; /* Largura adequada */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feature-card {
+    text-align: center;
+    padding: 1rem; /* Padding menor no mobile */
+    margin-bottom: 0.5rem;
+    height: 14rem;
+  }
+
+  .feature-card .icon {
+    text-align: center;
+    margin: auto;
+    width: 40px; /* Ícone menor */
+    height: 40px;
+    font-size: 1.1rem; /* Fonte menor */
+    margin-bottom: 0.5rem;
+  }
+
   nav {
     height: 10rem;
     width: 50%;
@@ -546,6 +635,7 @@ main {
 
   .btn-banner-b {
     margin: 0 auto;
+    padding: 7px;
   }
 
   .btn-banner,
